@@ -34,6 +34,7 @@ final class ViewController: UIViewController {
 
   @IBOutlet var tableView: UITableView!
   @IBOutlet var undoBarButtonItem: UIBarButtonItem!
+  @IBOutlet var saveBarButtonItem: UIBarButtonItem!
   @IBOutlet var trashBarButtonItem: UIBarButtonItem!
   
   override func viewDidLoad() {
