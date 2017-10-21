@@ -18,7 +18,8 @@ struct Person : SomeProtocol {
 
 let p1 = Person(name: "tod", salary: 400)
 p1.ptt()
-
+let p2 = Person(name: "mac", salary: 500)
+p2.ptt()
 
 protocol AnotherProtocol {
     static var someTypeProperty: Int { get set }
