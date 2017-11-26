@@ -4,5 +4,8 @@
         <page name='Guard_example'/>
         <page name='CustomOperator_CGPoint'/>
         <page name='CustomOperator_Unwrap'/>
+        <page name='CusstomOperator_Exponents'/>
+        <page name='Protocol_Generics'/>
+        <page name='ValuesReferences'/>
     </pages>
 </playground>
