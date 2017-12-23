@@ -8,9 +8,10 @@
 
 import UIKit
 
-class AddItemViewController: UITableViewController {
+class AddItemViewController: UITableViewController, UITextFieldDelegate {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var textField: UITextField!
+  override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -19,8 +20,17 @@ class AddItemViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
       self.navigationItem.largeTitleDisplayMode = .never
+    textField.delegate = self
     }
-
+  override func viewWillAppear(_ animated: Bool) {
+    textField.becomeFirstResponder()
+  }
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    textField.resignFirstResponder()
+    return true
+  }
+  
   @IBAction func cancel() {
     self.navigationController?.popViewController(animated: true)
   }
