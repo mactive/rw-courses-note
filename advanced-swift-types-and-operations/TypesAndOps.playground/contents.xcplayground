@@ -7,5 +7,7 @@
         <page name='AccessControl'/>
         <page name='Phantom'/>
         <page name='invalid-state-challenge'/>
+        <page name='CustomOperator'/>
+        <page name='06-custom-operator'/>
     </pages>
 </playground>
