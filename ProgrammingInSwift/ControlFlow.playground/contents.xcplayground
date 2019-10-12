@@ -4,5 +4,6 @@
         <page name='WhileChallenge'/>
         <page name='While'/>
         <page name='FooLoop'/>
+        <page name='Switch'/>
     </pages>
 </playground>

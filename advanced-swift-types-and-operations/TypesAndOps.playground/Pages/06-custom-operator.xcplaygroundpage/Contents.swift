@@ -55,9 +55,29 @@ angle1.radians
 var angle2 = CGAngle(radians: CGFloat.pi / 2)
 angle2.radians
 
-
 angle1 == angle2
 
+// CGAngle
+extension CGAngle {
+    @inlinable static func +(lhs: CGAngle, rhs: CGAngle) -> CGAngle {
+        return CGAngle(radians: lhs.radians + rhs.radians)
+    }
+    @inlinable static func +=(lhs: inout CGAngle, rhs: CGAngle) {
+        lhs = lhs + rhs
+    }
+    @inlinable static prefix func -(angle: CGAngle) -> CGAngle {
+        return CGAngle(radians: -angle.radians)
+    }
+    @inlinable static func -(lhs: CGAngle, rhs: CGAngle) -> CGAngle {
+        return lhs +  (-rhs)
+    }
+    @inlinable static func -=(lhs: inout CGAngle, rhs: CGAngle) {
+        lhs = lhs - rhs
+    }
+}
+
+CGAngle(radians: .pi) + CGAngle(degress: 80) + CGAngle(degress: 100)
+== CGAngle(radians: 2 * .pi)
 
 
 //: [Next](@next)

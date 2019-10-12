@@ -9,5 +9,6 @@
         <page name='invalid-state-challenge'/>
         <page name='CustomOperator'/>
         <page name='06-custom-operator'/>
+        <page name='07-custom-operator'/>
     </pages>
 </playground>
