@@ -6,5 +6,6 @@
         <page name='FooLoop'/>
         <page name='Switch'/>
         <page name='SwitchChallenge'/>
+        <page name='Enumeration'/>
     </pages>
 </playground>
