@@ -14,7 +14,7 @@ struct Light{
 
 struct ContentView: View {
 
-    var lights = [
+    @State var lights = [
         [Light(), Light(), Light(status: true)],
         [Light(), Light(), Light()],
         [Light(status: true), Light(), Light()],
@@ -31,11 +31,32 @@ struct ContentView: View {
                         .frame(width: UIScreen.main.bounds.width / 5,
                                height: UIScreen.main.bounds.width / 5)
                         .shadow(color: .yellow, radius: self.lights[rowIndex][columnIndex].status ? 10 : 0)
+                            .onTapGesture {
+                                self.updateLightStatus(row: rowIndex, column: columnIndex)
+                        }
                     }
                 }
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
             }
+            Button(action: {
+                print("Delete tapped!")
+            }) {
+                HStack {
+                    Image(systemName: "goforward")
+                        .font(.title)
+                    Text("Refresh")
+                        .fontWeight(.semibold)
+                        .font(.title)
+                }
+                .padding()
+                .foregroundColor(.white)
+                .background(Color.red)
+                .cornerRadius(40)
+            }
         }
+    }
+    func updateLightStatus(row: Int, column: Int) {
+        lights[row][column].status.toggle()
     }
 }
 
