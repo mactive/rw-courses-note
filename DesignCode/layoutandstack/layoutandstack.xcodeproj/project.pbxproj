@@ -17,6 +17,7 @@
 		2C6CEE0A2410350600F2EA13 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CEE092410350600F2EA13 /* Data.swift */; };
 		2C6CEE0C2410367100F2EA13 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CEE0B2410367100F2EA13 /* PostList.swift */; };
 		D91E0CA824300DF7002D2201 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91E0CA724300DF7002D2201 /* MenuView.swift */; };
+		D91E0CAA24301F74002D2201 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91E0CA924301F74002D2201 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2C6CEE092410350600F2EA13 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		2C6CEE0B2410367100F2EA13 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		D91E0CA724300DF7002D2201 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		D91E0CA924301F74002D2201 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				2C19B4E923E707C5001930DC /* SceneDelegate.swift */,
 				2C19B4EB23E707C5001930DC /* ContentView.swift */,
 				D91E0CA724300DF7002D2201 /* MenuView.swift */,
+				D91E0CA924301F74002D2201 /* HomeView.swift */,
 				2C19B4FD23E70EA7001930DC /* BackCardView.swift */,
 				2C6CEE092410350600F2EA13 /* Data.swift */,
 				2C6CEE0B2410367100F2EA13 /* PostList.swift */,
@@ -163,6 +166,7 @@
 				2C6CEE0C2410367100F2EA13 /* PostList.swift in Sources */,
 				2C19B4EA23E707C5001930DC /* SceneDelegate.swift in Sources */,
 				2C19B4EC23E707C5001930DC /* ContentView.swift in Sources */,
+				D91E0CAA24301F74002D2201 /* HomeView.swift in Sources */,
 				2C6CEE0A2410350600F2EA13 /* Data.swift in Sources */,
 				2C19B4FE23E70EA7001930DC /* BackCardView.swift in Sources */,
 			);

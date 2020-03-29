@@ -15,6 +15,7 @@ struct MenuView: View {
 
             VStack(spacing: 16) {
                 Text("Meng - 28% complete")
+                    .font(.caption)
                 Color.white
                     .frame(width: 38, height: 6)
                     .cornerRadius(3)
